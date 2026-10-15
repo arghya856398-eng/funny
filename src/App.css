@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  font-family: inherit;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 35px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 10% 20%, #ffd6a5 0, transparent 30%),
+    radial-gradient(circle at 90% 80%, #b7f7ce 0, transparent 30%),
+    #fff8ee;
+  position: relative;
+}
+
+.tricolor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 9px;
+  background: linear-gradient(
+    to right,
+    #ff9933 33.3%,
+    white 33.3% 66.6%,
+    #138808 66.6%
+  );
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 490px;
+  padding: 34px 25px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 22px 65px rgba(95, 57, 17, 0.15);
+  animation: appear 0.6s ease-out;
+}
+
+.top-label {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 30px;
+  background: #fff0dc;
+  color: #a34c00;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.hero-emoji {
+  margin-top: 20px;
+  font-size: 55px;
+  animation: bounce 2s infinite;
+}
+
+h1 {
+  margin: 12px 0;
+  color: #202020;
+  font-size: clamp(30px, 7vw, 43px);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+h1 span {
+  display: block;
+  color: #f07800;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.avatar {
+  width: 105px;
+  height: 105px;
+  margin: 25px auto 15px;
+  display: grid;
+  place-items: center;
+  border: 4px solid #ff9933;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffefd8, #d9f6df);
+  font-size: 57px;
+  box-shadow: 0 8px 25px #ff993333;
+}
+
+.speech-bubble {
+  min-height: 66px;
+  display: grid;
+  place-items: center;
+  padding: 15px;
+  border-radius: 16px;
+  background: #f5f5f5;
+  color: #383838;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.main-button,
+.joke-button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 15px;
+  border: 0;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 800;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.main-button {
+  color: white;
+  background: linear-gradient(135deg, #ff9933, #f16a00);
+  box-shadow: 0 7px 18px #ff993344;
+}
+
+.joke-button {
+  margin-top: 10px;
+  color: #333;
+  background: #e7f6e8;
+}
+
+.main-button:hover,
+.joke-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px #0002;
+}
+
+.status {
+  margin-top: 22px;
+  color: #777;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+footer {
+  margin-top: 23px;
+  color: #999;
+  font-size: 10px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(4deg);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 28px 18px;
+  }
+}
