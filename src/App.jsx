@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import "./App.css";
 
 const memes = [
-  { id: "modi", name: "Modi Meme", file: "/modi.mp3", emoji: "🇮🇳" },
+  { id: "modi", name: "Modi Meme", file: "/modi-speech.mp3", emoji: "🇮🇳" },
   { id: "gaming", name: "Gamer Reaction", file: "/gaming.mp3", emoji: "🎮" },
   { id: "cricket", name: "Cricket Reaction", file: "/cricket.mp3", emoji: "🏏" },
   { id: "music", name: "Music Meme", file: "/music.mp3", emoji: "🎵" },
